@@ -19,9 +19,8 @@ function App() {
         >
           Learn Solid
         </a>
-        <input type="text" value={asdf()} onChange={(v) => setAsdf(v.currentTarget.value)} />
+        <button onClick={() => setAsdf(asdf() +1)}>{asdf()}</button>
       </header>
-      <div>{asdf()}</div>
     </div>
   );
 }
